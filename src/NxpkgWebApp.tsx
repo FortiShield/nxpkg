@@ -1,13 +1,13 @@
-import { Notifications } from '@nxpkg/extensions-client-common/lib/app/notifications/Notifications'
-import { createController as createExtensionsController } from '@nxpkg/extensions-client-common/lib/client/controller'
-import { ConfiguredExtension } from '@nxpkg/extensions-client-common/lib/extensions/extension'
-import { ClientConnection, connectAsPage } from '@nxpkg/extensions-client-common/lib/messaging'
+import { Notifications } from '@sourcegraph/extensions-client-common/lib/app/notifications/Notifications'
+import { createController as createExtensionsController } from '@sourcegraph/extensions-client-common/lib/client/controller'
+import { ConfiguredExtension } from '@sourcegraph/extensions-client-common/lib/extensions/extension'
+import { ClientConnection, connectAsPage } from '@sourcegraph/extensions-client-common/lib/messaging'
 import {
     ConfigurationCascadeOrError,
     ConfigurationSubject,
     ConfiguredSubject,
     Settings,
-} from '@nxpkg/extensions-client-common/lib/settings'
+} from '@sourcegraph/extensions-client-common/lib/settings'
 import AlertCircleIcon from 'mdi-react/AlertCircleIcon'
 import ServerIcon from 'mdi-react/ServerIcon'
 import * as React from 'react'

@@ -3,6 +3,7 @@
  * Used for user, team member, and org avatars.
  */
 .avatar {
+
     .avatar-icon,
     .icon {
         height: 100%;
@@ -36,15 +37,16 @@ img.icon-inline,
 }
 
 // Special case for the loader
-.icon-inline > .icon-loader {
+.icon-inline>.icon-loader {
     stroke: currentColor;
 }
 
-// @nxpkg/react-loading-spinner coloring
+// @nx-pkg/react-loading-spinner coloring
 .theme-light {
     --loading-spinner-outer-color: #{rgba($body-color-light, 0.3)};
     --loading-spinner-inner-color: #{rgba($body-color-light, 1)};
 }
+
 .theme-dark {
     --loading-spinner-outer-color: #{rgba($body-color-dark, 0.3)};
     --loading-spinner-inner-color: #{rgba($body-color-dark, 1)};

@@ -5,8 +5,8 @@ import {
     HoveredTokenContext,
     HoverOverlay,
     HoverState,
-} from '@nxpkg/codeintellify'
-import { getCodeElementsInRange, locateTarget } from '@nxpkg/codeintellify/lib/token_position'
+} from '@sourcegraph/codeintellify'
+import { getCodeElementsInRange, locateTarget } from '@sourcegraph/codeintellify/lib/token_position'
 import * as H from 'history'
 import { isEqual, pick } from 'lodash'
 import * as React from 'react'

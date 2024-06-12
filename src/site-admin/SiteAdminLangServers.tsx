@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { sortBy } from 'lodash'
 import AlertCircleIcon from 'mdi-react/AlertCircleIcon'
 import BugIcon from 'mdi-react/BugIcon'

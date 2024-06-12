@@ -1,4 +1,4 @@
-import { ConfiguredExtension } from '@nxpkg/extensions-client-common/lib/extensions/extension'
+import { ConfiguredExtension } from '@sourcegraph/extensions-client-common/lib/extensions/extension'
 import marked from 'marked'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
@@ -39,9 +39,8 @@ export const ExtensionREADME: React.SFC<{
             <PublishNewManifestAlert
                 extension={extension}
                 alertClass="alert-danger"
-                text={`This extension's manifest is invalid: ${
-                    manifest && manifest.message ? manifest.message : 'JSON parse error'
-                }`}
+                text={`This extension's manifest is invalid: ${manifest && manifest.message ? manifest.message : 'JSON parse error'
+                    }`}
                 buttonLabel="Fix manifest and publish new release"
             />
         )

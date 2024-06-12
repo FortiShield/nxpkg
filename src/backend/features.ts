@@ -1,4 +1,4 @@
-import { HoverMerged } from '@nxpkg/codeintellify/lib/types'
+import { HoverMerged } from '@sourcegraph/codeintellify/lib/types'
 import { SymbolLocationInformation } from 'javascript-typescript-langserver/lib/request-type'
 import { flatten } from 'lodash'
 import { forkJoin, Observable } from 'rxjs'

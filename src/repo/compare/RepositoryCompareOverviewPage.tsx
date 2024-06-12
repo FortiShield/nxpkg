@@ -1,5 +1,5 @@
-import { Hoverifier } from '@nxpkg/codeintellify'
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { Hoverifier } from '@sourcegraph/codeintellify'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
@@ -71,10 +71,10 @@ function queryRepositoryComparison(args: {
 
 interface Props
     extends RepositoryCompareAreaPageProps,
-        RouteComponentProps<{}>,
-        ExtensionsProps,
-        ExtensionsControllerProps,
-        ExtensionsDocumentsProps {
+    RouteComponentProps<{}>,
+    ExtensionsProps,
+    ExtensionsControllerProps,
+    ExtensionsDocumentsProps {
     /** The base of the comparison. */
     base: { repoPath: string; repoID: GQL.ID; rev?: string | null }
 

@@ -268,7 +268,7 @@ export const build = gulp.parallel(
 export const watch = gulp.parallel(watchSass, watchSchema, watchGraphQLTypes, watchTypescript, webpackServe)
 
 /**
- * Publishes a new version of @nxpkg/webapp to npm.
+ * Publishes a new version of @sourcegraph/webapp to npm.
  * Gets the last release from the npm registry, increases the patch version, writes it to package.json and publishes the package.
  * It is not a goal to parse commit messages or follow semantic versioning - every commit gets released as a 0.0.x release.
  * No git tags or GitHub releases are created.

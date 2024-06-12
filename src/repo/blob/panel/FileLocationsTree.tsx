@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
@@ -101,10 +101,10 @@ export class FileLocationsTree extends React.PureComponent<Props, State> {
                             catchError(error => [asError(error)]),
                             map(
                                 c =>
-                                    ({
-                                        locationsOrError: isError(c) ? c : c.locations,
-                                        loading: isError(c) ? false : c.loading,
-                                    } as PartialStateUpdate)
+                                ({
+                                    locationsOrError: isError(c) ? c : c.locations,
+                                    loading: isError(c) ? false : c.loading,
+                                } as PartialStateUpdate)
                             )
                         )
 
@@ -180,9 +180,8 @@ export class FileLocationsTree extends React.PureComponent<Props, State> {
                             {orderedRepos.map((repo, i) => (
                                 <Link
                                     key={i}
-                                    className={`list-group-item file-locations-tree__item ${
-                                        selectedRepo === repo ? 'active' : ''
-                                    }`}
+                                    className={`list-group-item file-locations-tree__item ${selectedRepo === repo ? 'active' : ''
+                                        }`}
                                     to={this.props.location}
                                     // tslint:disable-next-line:jsx-no-lambda
                                     onClick={e => this.onSelectTree(e, repo)}

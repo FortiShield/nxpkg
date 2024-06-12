@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import AddIcon from 'mdi-react/AddIcon'
 import CloseIcon from 'mdi-react/CloseIcon'
@@ -290,9 +290,8 @@ export class InviteForm extends React.PureComponent<Props, State> {
                                     <button
                                         type={viewerCanAddUserToOrganization ? 'button' : 'submit'}
                                         disabled={!!this.state.loading}
-                                        className={`btn ${
-                                            viewerCanAddUserToOrganization ? 'btn-secondary' : 'btn-primary'
-                                        }`}
+                                        className={`btn ${viewerCanAddUserToOrganization ? 'btn-secondary' : 'btn-primary'
+                                            }`}
                                         data-tooltip={
                                             emailInvitesEnabled
                                                 ? 'Send invitation email with link to join this organization'

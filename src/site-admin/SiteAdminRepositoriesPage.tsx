@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import AddIcon from 'mdi-react/AddIcon'
 import CheckIcon from 'mdi-react/CheckIcon'
@@ -252,12 +252,12 @@ class AddPublicRepositoryForm extends React.PureComponent<AddPublicRepositoryFor
     }
 }
 
-interface Props extends RouteComponentProps<any> {}
+interface Props extends RouteComponentProps<any> { }
 interface State {
     addPublicRepositoryFormVisible: boolean
 }
 
-class FilteredRepositoryConnection extends FilteredConnection<GQL.IRepository> {}
+class FilteredRepositoryConnection extends FilteredConnection<GQL.IRepository> { }
 
 /**
  * A page displaying the repositories on this site.

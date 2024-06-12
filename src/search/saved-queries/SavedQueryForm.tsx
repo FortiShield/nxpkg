@@ -1,4 +1,4 @@
-import { ConfigurationSubject } from '@nxpkg/extensions-client-common/lib/settings'
+import { ConfigurationSubject } from '@sourcegraph/extensions-client-common/lib/settings'
 import CloseIcon from 'mdi-react/CloseIcon'
 import * as React from 'react'
 import { Link } from 'react-router-dom'

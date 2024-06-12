@@ -1,4 +1,4 @@
-import { DiffPart, DOMFunctions, findPositionsFromEvents, Hoverifier } from '@nxpkg/codeintellify'
+import { DiffPart, DOMFunctions, findPositionsFromEvents, Hoverifier } from '@sourcegraph/codeintellify'
 import * as H from 'history'
 import { isEqual } from 'lodash'
 import * as React from 'react'
@@ -71,14 +71,12 @@ const DiffHunk: React.SFC<{
                     return (
                         <tr
                             key={i}
-                            className={`diff-hunk__line ${line[0] === ' ' ? 'diff-hunk__line--both' : ''} ${
-                                line[0] === '-' ? 'diff-hunk__line--deletion' : ''
-                            } ${line[0] === '+' ? 'diff-hunk__line--addition' : ''} ${
-                                (line[0] !== '+' && location.hash === '#' + oldAnchor) ||
-                                (line[0] !== '-' && location.hash === '#' + newAnchor)
+                            className={`diff-hunk__line ${line[0] === ' ' ? 'diff-hunk__line--both' : ''} ${line[0] === '-' ? 'diff-hunk__line--deletion' : ''
+                                } ${line[0] === '+' ? 'diff-hunk__line--addition' : ''} ${(line[0] !== '+' && location.hash === '#' + oldAnchor) ||
+                                    (line[0] !== '-' && location.hash === '#' + newAnchor)
                                     ? 'diff-hunk__line--active'
                                     : ''
-                            }`}
+                                }`}
                         >
                             {lineNumbers && (
                                 <>
@@ -204,7 +202,7 @@ interface Props extends ExtensionsProps {
     hoverifier: Hoverifier
 }
 
-interface State {}
+interface State { }
 
 /** Displays hunks in a unified file diff. */
 export class FileDiffHunks extends React.Component<Props, State> {

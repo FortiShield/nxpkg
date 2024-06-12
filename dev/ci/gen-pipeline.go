@@ -236,7 +236,7 @@ func main() {
 	//	bk.Cmd("bash <(curl -s https://codecov.io/bash) -X gcov -X coveragepy -X xcode -t TEMPORARILY_REDACTED"))
 
 	if branch == "master" {
-		// Publish @nxpkg/webapp to npm
+		// Publish @sourcegraph/webapp to npm
 		pipeline.AddStep(":npm:",
 			bk.Cmd("yarn --frozen-lockfile"),
 			bk.Cmd("yarn run dist"),
@@ -271,7 +271,7 @@ func main() {
 		// forwarded in a trigger step, see https://github.com/buildkite/feedback/issues/403
 		// This is safe because the publish step has a concurrency group so no
 		// other publish can happen between now and its execution
-		out, err := exec.Command("bash", "-c", "npx --quiet semver --increment patch $(npm info @nxpkg/webapp version)").Output()
+		out, err := exec.Command("bash", "-c", "npx --quiet semver --increment patch $(npm info @sourcegraph/webapp version)").Output()
 		if err != nil {
 			panic(err)
 		}

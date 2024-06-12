@@ -1,3 +1,5 @@
 {
-  "extends": ["@nxpkg/stylelint-config"]
+  "extends": [
+    "@sourcegraph/stylelint-config"
+  ]
 }

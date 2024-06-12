@@ -5,7 +5,7 @@ import {
     Hoverifier,
     HoverOverlay,
     HoverState,
-} from '@nxpkg/codeintellify'
+} from '@sourcegraph/codeintellify'
 import { isEqual, upperFirst } from 'lodash'
 import AlertCircleIcon from 'mdi-react/AlertCircleIcon'
 import MapSearchIcon from 'mdi-react/MapSearchIcon'
@@ -40,10 +40,10 @@ const NotFoundPage = () => (
 
 interface Props
     extends RouteComponentProps<{ spec: string }>,
-        RepoHeaderContributionsLifecycleProps,
-        ExtensionsProps,
-        ExtensionsControllerProps,
-        ExtensionsDocumentsProps {
+    RepoHeaderContributionsLifecycleProps,
+    ExtensionsProps,
+    ExtensionsControllerProps,
+    ExtensionsDocumentsProps {
     repo: GQL.IRepository
 }
 
@@ -226,10 +226,9 @@ export class RepositoryCompareArea extends React.Component<Props, State> {
 
     private onUpdateComparisonSpec = (newBaseSpec: string, newHeadSpec: string): void => {
         this.props.history.push(
-            `/${this.props.repo.name}/-/compare${
-                newBaseSpec || newHeadSpec
-                    ? `/${escapeRevspecForURL(newBaseSpec || '')}...${escapeRevspecForURL(newHeadSpec || '')}`
-                    : ''
+            `/${this.props.repo.name}/-/compare${newBaseSpec || newHeadSpec
+                ? `/${escapeRevspecForURL(newBaseSpec || '')}...${escapeRevspecForURL(newHeadSpec || '')}`
+                : ''
             }`
         )
     }

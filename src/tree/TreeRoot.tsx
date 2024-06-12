@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import * as React from 'react'
 import { merge, of, Subject, Subscription } from 'rxjs'

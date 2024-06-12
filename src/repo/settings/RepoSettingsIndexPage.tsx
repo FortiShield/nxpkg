@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
 import prettyBytes from 'pretty-bytes'
 import * as React from 'react'

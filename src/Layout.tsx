@@ -1,4 +1,4 @@
-import { ClientConnection } from '@nxpkg/extensions-client-common/lib/messaging'
+import { ClientConnection } from '@sourcegraph/extensions-client-common/lib/messaging'
 import React from 'react'
 import { Redirect, Route, RouteComponentProps, Switch } from 'react-router'
 import * as GQL from './backend/graphqlschema'
@@ -28,11 +28,11 @@ import { UserAccountSidebarItems } from './user/account/UserAccountSidebar'
 
 export interface LayoutProps
     extends RouteComponentProps<any>,
-        ConfigurationCascadeProps,
-        ExtensionsProps,
-        ExtensionsEnvironmentProps,
-        ExtensionsControllerProps,
-        ExtensionsDocumentsProps {
+    ConfigurationCascadeProps,
+    ExtensionsProps,
+    ExtensionsEnvironmentProps,
+    ExtensionsControllerProps,
+    ExtensionsDocumentsProps {
     extensionAreaRoutes: ReadonlyArray<ExtensionAreaRoute>
     extensionAreaHeaderNavItems: ReadonlyArray<ExtensionAreaHeaderNavItem>
     extensionsAreaRoutes: ReadonlyArray<ExtensionsAreaRoute>

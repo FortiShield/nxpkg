@@ -1,5 +1,5 @@
-import { ActionsNavItems } from '@nxpkg/extensions-client-common/lib/app/actions/ActionsNavItems'
-import { CommandListPopoverButton } from '@nxpkg/extensions-client-common/lib/app/CommandList'
+import { ActionsNavItems } from '@sourcegraph/extensions-client-common/lib/app/actions/ActionsNavItems'
+import { CommandListPopoverButton } from '@sourcegraph/extensions-client-common/lib/app/CommandList'
 import * as H from 'history'
 import * as React from 'react'
 import { Link } from 'react-router-dom'

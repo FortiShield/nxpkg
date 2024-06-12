@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import SettingsIcon from 'mdi-react/SettingsIcon'
 import * as React from 'react'
 import { Link, RouteComponentProps } from 'react-router-dom'

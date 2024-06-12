@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
@@ -53,7 +53,7 @@ function queryUser(user: GQL.ID): Observable<GQL.IUser> {
     )
 }
 
-interface Props extends UserAreaPageProps, RouteComponentProps<{}> {}
+interface Props extends UserAreaPageProps, RouteComponentProps<{}> { }
 
 interface State {
     /** The user to edit, or an error, or undefined while loading. */

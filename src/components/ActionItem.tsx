@@ -1,1 +1,1 @@
-export { LinkOrButton as ActionItem } from '@nxpkg/extensions-client-common/lib/ui/generic/LinkOrButton'
+export { LinkOrButton as ActionItem } from '@sourcegraph/extensions-client-common/lib/ui/generic/LinkOrButton'

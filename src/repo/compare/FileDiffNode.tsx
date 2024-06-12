@@ -1,4 +1,4 @@
-import { Hoverifier } from '@nxpkg/codeintellify'
+import { Hoverifier } from '@sourcegraph/codeintellify'
 import * as H from 'history'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import ChevronUpIcon from 'mdi-react/ChevronUpIcon'

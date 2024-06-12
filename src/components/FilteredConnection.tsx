@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import { uniq, upperFirst } from 'lodash'
 import * as React from 'react'
@@ -38,7 +38,7 @@ interface FilterProps {
     value: string
 }
 
-interface FilterState {}
+interface FilterState { }
 
 class FilteredConnectionFilterControl extends React.PureComponent<FilterProps, FilterState> {
     public render(): React.ReactFragment {
@@ -119,7 +119,7 @@ interface ConnectionStateCommon {
 
 interface ConnectionNodesProps<C extends Connection<N>, N, NP = {}>
     extends ConnectionPropsCommon<N, NP>,
-        ConnectionStateCommon {
+    ConnectionStateCommon {
     /** The fetched connection data or an error (if an error occurred). */
     connection: C
 
@@ -329,7 +329,7 @@ interface FilteredConnectionDisplayProps extends ConnectionDisplayProps {
  */
 interface FilteredConnectionProps<C extends Connection<N>, N, NP = {}>
     extends ConnectionPropsCommon<N, NP>,
-        FilteredConnectionDisplayProps {
+    FilteredConnectionDisplayProps {
     /** Called to fetch the connection data to populate this component. */
     queryConnection: (args: FilteredConnectionQueryArgs) => Observable<C>
 
@@ -509,11 +509,11 @@ export class FilteredConnection<N, NP = {}, C extends Connection<N> = Connection
                                 catchError(error => [asError(error)]),
                                 map(
                                     c =>
-                                        ({
-                                            connectionOrError: c,
-                                            connectionQuery: query,
-                                            loading: false,
-                                        } as PartialStateUpdate)
+                                    ({
+                                        connectionOrError: c,
+                                        connectionQuery: query,
+                                        loading: false,
+                                    } as PartialStateUpdate)
                                 ),
                                 publishReplay<PartialStateUpdate>(),
                                 refCount()
@@ -524,12 +524,12 @@ export class FilteredConnection<N, NP = {}, C extends Connection<N> = Connection
                         lastFilter = filter
                         return showLoading
                             ? merge(
-                                  result,
-                                  of({ connectionOrError: undefined, loading: true }).pipe(
-                                      delay(250),
-                                      takeUntil(result)
-                                  )
-                              )
+                                result,
+                                of({ connectionOrError: undefined, loading: true }).pipe(
+                                    delay(250),
+                                    takeUntil(result)
+                                )
+                            )
                             : result
                     }),
                     tap(({ connectionOrError }) => {

@@ -1,4 +1,4 @@
-import { ActionsNavItems } from '@nxpkg/extensions-client-common/lib/app/actions/ActionsNavItems'
+import { ActionsNavItems } from '@sourcegraph/extensions-client-common/lib/app/actions/ActionsNavItems'
 import * as H from 'history'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import SettingsIcon from 'mdi-react/SettingsIcon'
@@ -24,7 +24,7 @@ class RepoHeaderContributionStore {
     constructor(
         /** The common ancestor component's setState method. */
         private setState: (callback: (prevState: RepoHeaderContributionsProps) => RepoHeaderContributionsProps) => void
-    ) {}
+    ) { }
 
     private onRepoHeaderContributionAdd(item: RepoHeaderContribution): void {
         if (!item.element) {
@@ -117,7 +117,7 @@ export interface RepoHeaderContext {
     encodedRev?: string
 }
 
-export interface RepoHeaderActionButton extends ActionButtonDescriptor<RepoHeaderContext> {}
+export interface RepoHeaderActionButton extends ActionButtonDescriptor<RepoHeaderContext> { }
 
 interface Props extends ExtensionsProps, ExtensionsControllerProps {
     /**
@@ -130,17 +130,17 @@ interface Props extends ExtensionsProps, ExtensionsControllerProps {
      * The repository that this header is for.
      */
     repo:
-        | GQL.IRepository
-        | {
-              /** The repository's GQL.ID, if it has one.
-               */
-              id?: GQL.ID
+    | GQL.IRepository
+    | {
+        /** The repository's GQL.ID, if it has one.
+         */
+        id?: GQL.ID
 
-              name: string
-              url: string
-              enabled: boolean
-              viewerCanAdminister: boolean
-          }
+        name: string
+        url: string
+        enabled: boolean
+        viewerCanAdminister: boolean
+    }
 
     /** Information about the revision of the repository. */
     resolvedRev: ResolvedRev | ErrorLike | undefined
@@ -158,7 +158,7 @@ interface Props extends ExtensionsProps, ExtensionsControllerProps {
     history: H.History
 }
 
-interface State extends RepoHeaderContributionsProps {}
+interface State extends RepoHeaderContributionsProps { }
 
 /**
  * The repository header with the breadcrumb, revision switcher, and other items.

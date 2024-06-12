@@ -1,4 +1,4 @@
-import { ExtensionsList } from '@nxpkg/extensions-client-common/lib/extensions/manager/ExtensionsList'
+import { ExtensionsList } from '@sourcegraph/extensions-client-common/lib/extensions/manager/ExtensionsList'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
 import { Link } from 'react-router-dom'
@@ -7,7 +7,7 @@ import { eventLogger } from '../tracking/eventLogger'
 import { ExtensionsAreaRouteContext } from './ExtensionsArea'
 import { ExtensionsEmptyState } from './ExtensionsEmptyState'
 
-interface Props extends ExtensionsAreaRouteContext, RouteComponentProps<{}> {}
+interface Props extends ExtensionsAreaRouteContext, RouteComponentProps<{}> { }
 
 /** A page that displays overview information about viewer's configured extensions. */
 export class ExtensionsOverviewPage extends React.PureComponent<Props> {

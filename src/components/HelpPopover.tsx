@@ -1,5 +1,5 @@
-import { ActionItem } from '@nxpkg/extensions-client-common/lib/app/actions/ActionItem'
-import { ActionsContainer } from '@nxpkg/extensions-client-common/lib/app/actions/ActionsContainer'
+import { ActionItem } from '@sourcegraph/extensions-client-common/lib/app/actions/ActionItem'
+import { ActionsContainer } from '@sourcegraph/extensions-client-common/lib/app/actions/ActionsContainer'
 import BookOpenIcon from 'mdi-react/BookOpenIcon'
 import CloseIcon from 'mdi-react/CloseIcon'
 import LinkIcon from 'mdi-react/LinkIcon'

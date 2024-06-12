@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import * as React from 'react'
@@ -66,7 +66,7 @@ const queryGitBranches = memoizeObservable(
     args => `${args.repo}:${args.first}`
 )
 
-interface Props extends RepositoryBranchesAreaPageProps, RouteComponentProps<{}> {}
+interface Props extends RepositoryBranchesAreaPageProps, RouteComponentProps<{}> { }
 
 interface State {
     /** The page content, undefined while loading, or an error. */

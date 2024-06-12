@@ -1,4 +1,4 @@
-import { ClientConnection } from '@nxpkg/extensions-client-common/lib/messaging'
+import { ClientConnection } from '@sourcegraph/extensions-client-common/lib/messaging'
 import MapSearchIcon from 'mdi-react/MapSearchIcon'
 import * as React from 'react'
 import { Route, RouteComponentProps, Switch } from 'react-router'
@@ -13,7 +13,7 @@ import { ConfigurationCascadeProps, ExtensionsProps } from './ExtensionsClientCo
 
 const NotFoundPage = () => <HeroPage icon={MapSearchIcon} title="404: Not Found" />
 
-export interface ExtensionsAreaRoute extends RouteDescriptor<ExtensionsAreaRouteContext> {}
+export interface ExtensionsAreaRoute extends RouteDescriptor<ExtensionsAreaRouteContext> { }
 
 /**
  * Properties passed to all page components in the extensions area.
@@ -32,8 +32,8 @@ export interface ExtensionsAreaRouteContext extends ConfigurationCascadeProps, E
 
 interface ExtensionsAreaProps
     extends RouteComponentProps<{ extensionID: string }>,
-        ConfigurationCascadeProps,
-        ExtensionsProps {
+    ConfigurationCascadeProps,
+    ExtensionsProps {
     routes: ReadonlyArray<ExtensionsAreaRoute>
 
     /**
@@ -51,7 +51,7 @@ interface ExtensionsAreaProps
 
 const LOADING: 'loading' = 'loading'
 
-interface ExtensionsAreaState {}
+interface ExtensionsAreaState { }
 
 /**
  * The extensions area.

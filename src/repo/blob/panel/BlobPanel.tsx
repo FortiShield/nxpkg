@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { highlight } from 'highlight.js/lib/highlight'
 import * as H from 'history'
 import { castArray, isEqual } from 'lodash'
@@ -53,12 +53,12 @@ import { FileLocationsTree } from './FileLocationsTree'
 
 interface Props
     extends AbsoluteRepoFile,
-        Partial<PositionSpec>,
-        ModeSpec,
-        RepoHeaderContributionsLifecycleProps,
-        ConfigurationCascadeProps,
-        ExtensionsProps,
-        ExtensionsControllerProps {
+    Partial<PositionSpec>,
+    ModeSpec,
+    RepoHeaderContributionsLifecycleProps,
+    ConfigurationCascadeProps,
+    ExtensionsProps,
+    ExtensionsControllerProps {
     location: H.Location
     history: H.History
     repoID: GQL.ID

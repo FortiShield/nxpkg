@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import AddIcon from 'mdi-react/AddIcon'
 import CityIcon from 'mdi-react/CityIcon'
 import SettingsIcon from 'mdi-react/SettingsIcon'

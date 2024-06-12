@@ -1,4 +1,4 @@
-@import '@nxpkg/codeintellify/lib/HoverOverlay.scss';
+@import '@sourcegraph/codeintellify/lib/HoverOverlay.scss';
 @import './blame/BlameLine';
 @import './LineDecorationAttachment';
 @import './discussions/DiscussionsGutterOverlay.scss';
@@ -32,6 +32,7 @@
             .theme-dark & {
                 color: $gray-18;
             }
+
             .theme-light & {
                 color: $gray-05;
             }
@@ -39,10 +40,12 @@
 
         tr {
             transition: background 200ms ease-out;
+
             &.selected {
                 .theme-light & {
                     background: $gray-02;
                 }
+
                 .theme-dark & {
                     background: $gray-21;
                 }
@@ -80,6 +83,7 @@
                     .theme-dark & {
                         color: $gray-16;
                     }
+
                     .theme-light & {
                         color: $gray-07;
                     }

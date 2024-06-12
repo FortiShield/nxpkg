@@ -1,6 +1,6 @@
-import { isExtensionAdded, isExtensionEnabled } from '@nxpkg/extensions-client-common/lib/extensions/extension'
-import { ExtensionPrimaryActionButton } from '@nxpkg/extensions-client-common/lib/extensions/ExtensionPrimaryActionButton'
-import { ExtensionManifest } from '@nxpkg/extensions-client-common/lib/schema/extension.schema'
+import { isExtensionAdded, isExtensionEnabled } from '@sourcegraph/extensions-client-common/lib/extensions/extension'
+import { ExtensionPrimaryActionButton } from '@sourcegraph/extensions-client-common/lib/extensions/ExtensionPrimaryActionButton'
+import { ExtensionManifest } from '@sourcegraph/extensions-client-common/lib/schema/extension.schema'
 import * as React from 'react'
 import { Link, NavLink, RouteComponentProps } from 'react-router-dom'
 import { NavItemWithIconDescriptor } from '../../util/contributions'
@@ -14,7 +14,7 @@ interface ExtensionAreaHeaderProps extends ExtensionAreaRouteContext, RouteCompo
 
 export type ExtensionAreaHeaderContext = Pick<ExtensionAreaHeaderProps, 'extension'>
 
-export interface ExtensionAreaHeaderNavItem extends NavItemWithIconDescriptor<ExtensionAreaHeaderContext> {}
+export interface ExtensionAreaHeaderNavItem extends NavItemWithIconDescriptor<ExtensionAreaHeaderContext> { }
 
 /**
  * Header for the extension area.

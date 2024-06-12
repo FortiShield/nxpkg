@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { ServerCapabilities } from 'javascript-typescript-langserver/lib/request-type'
 import { isEqual, upperFirst } from 'lodash'
 import CheckIcon from 'mdi-react/CheckIcon'

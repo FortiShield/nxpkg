@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import AlertCircleIcon from 'mdi-react/AlertCircleIcon'
 import MapSearchIcon from 'mdi-react/MapSearchIcon'
@@ -111,10 +111,10 @@ export class FileLocations extends React.PureComponent<Props, State> {
                             catchError(error => [asError(error)]),
                             map(
                                 c =>
-                                    ({
-                                        locationsOrError: isError(c) ? c : c.locations,
-                                        loading: isError(c) ? false : c.loading,
-                                    } as PartialStateUpdate)
+                                ({
+                                    locationsOrError: isError(c) ? c : c.locations,
+                                    loading: isError(c) ? false : c.loading,
+                                } as PartialStateUpdate)
                             )
                         )
 

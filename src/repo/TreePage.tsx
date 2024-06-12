@@ -1,6 +1,6 @@
-import { ActionItem } from '@nxpkg/extensions-client-common/lib/app/actions/ActionItem'
-import { ActionsContainer } from '@nxpkg/extensions-client-common/lib/app/actions/ActionsContainer'
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { ActionItem } from '@sourcegraph/extensions-client-common/lib/app/actions/ActionItem'
+import { ActionsContainer } from '@sourcegraph/extensions-client-common/lib/app/actions/ActionsContainer'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import { escapeRegExp, upperFirst } from 'lodash'
 import FolderIcon from 'mdi-react/FolderIcon'
@@ -226,8 +226,8 @@ export class TreePage extends React.PureComponent<Props, State> {
                                             to={
                                                 this.props.rev
                                                     ? `/${this.props.repoPath}/-/compare/...${encodeURIComponent(
-                                                          this.props.rev
-                                                      )}`
+                                                        this.props.rev
+                                                    )}`
                                                     : `/${this.props.repoPath}/-/compare`
                                             }
                                         >

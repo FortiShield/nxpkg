@@ -1,5 +1,5 @@
-import { ExtensionStatusPopover } from '@nxpkg/extensions-client-common/lib/app/ExtensionStatus'
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { ExtensionStatusPopover } from '@sourcegraph/extensions-client-common/lib/app/ExtensionStatus'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import MenuDownIcon from 'mdi-react/MenuDownIcon'
 import * as React from 'react'

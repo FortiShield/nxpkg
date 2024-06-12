@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import formatDistance from 'date-fns/formatDistance'
 import { upperFirst } from 'lodash'
 import CheckIcon from 'mdi-react/CheckIcon'
@@ -14,7 +14,7 @@ import { eventLogger } from '../tracking/eventLogger'
 import { fetchSite, fetchSiteUpdateCheck } from './backend'
 import { getUpdateChannel } from './configHelpers'
 
-interface Props extends RouteComponentProps<any> {}
+interface Props extends RouteComponentProps<any> { }
 
 interface State {
     channel?: string | null

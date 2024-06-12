@@ -1,4 +1,4 @@
-import { ConfigurationSubject, SubjectConfigurationContents } from '@nxpkg/extensions-client-common/lib/settings'
+import { ConfigurationSubject, SubjectConfigurationContents } from '@sourcegraph/extensions-client-common/lib/settings'
 import { parse, ParseError, ParseErrorCode } from '@sqs/jsonc-parser'
 import { BehaviorSubject, combineLatest, Observable, ReplaySubject } from 'rxjs'
 import { map } from 'rxjs/operators'
@@ -30,15 +30,15 @@ export const configurationCascade: Observable<
             ...gqlCascade.subjects,
             ...(clientContents !== undefined
                 ? [
-                      {
-                          id: 'Client',
-                          settingsURL: '',
-                          viewerCanAdminister: true,
-                          displayName: 'Client',
-                          __typename: 'Client' as 'Client',
-                          latestSettings: { id: 0, configuration: { contents: clientContents || '{}' } },
-                      },
-                  ]
+                    {
+                        id: 'Client',
+                        settingsURL: '',
+                        viewerCanAdminister: true,
+                        displayName: 'Client',
+                        __typename: 'Client' as 'Client',
+                        latestSettings: { id: 0, configuration: { contents: clientContents || '{}' } },
+                    },
+                ]
                 : []),
         ],
     }))

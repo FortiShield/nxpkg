@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import AddIcon from 'mdi-react/AddIcon'
 import AutoFixIcon from 'mdi-react/AutoFixIcon'

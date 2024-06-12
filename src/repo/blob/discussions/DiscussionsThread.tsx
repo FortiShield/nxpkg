@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import * as H from 'history'
 import AlertCircleIcon from 'mdi-react/AlertCircleIcon'
 import * as React from 'react'
@@ -144,14 +144,14 @@ export class DiscussionsThread extends React.PureComponent<Props, State> {
 
         return thread.target.__typename === 'DiscussionThreadTargetRepo' && thread.target.selection !== null
             ? formatHash(
-                  {
-                      line: thread.target.selection.startLine,
-                      character: thread.target.selection.startCharacter,
-                      endLine: thread.target.selection.endLine,
-                      endCharacter: thread.target.selection.endCharacter,
-                  },
-                  hash
-              )
+                {
+                    line: thread.target.selection.startLine,
+                    character: thread.target.selection.startCharacter,
+                    endLine: thread.target.selection.endLine,
+                    endCharacter: thread.target.selection.endCharacter,
+                },
+                hash
+            )
             : '#' + hash.toString()
     }
 

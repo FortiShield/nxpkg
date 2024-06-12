@@ -5,8 +5,8 @@ import {
     Hoverifier,
     HoverOverlay,
     HoverState,
-} from '@nxpkg/codeintellify'
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+} from '@sourcegraph/codeintellify'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { isEqual, upperFirst } from 'lodash'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
@@ -65,9 +65,9 @@ const queryCommit = memoizeObservable(
 
 interface Props
     extends RouteComponentProps<{ revspec: string }>,
-        ExtensionsProps,
-        ExtensionsControllerProps,
-        ExtensionsDocumentsProps {
+    ExtensionsProps,
+    ExtensionsControllerProps,
+    ExtensionsDocumentsProps {
     repo: GQL.IRepository
 
     onDidUpdateExternalLinks: (externalLinks: GQL.IExternalLink[] | undefined) => void

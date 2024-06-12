@@ -1,4 +1,4 @@
-import { ConfiguredExtension } from '@nxpkg/extensions-client-common/lib/extensions/extension'
+import { ConfiguredExtension } from '@sourcegraph/extensions-client-common/lib/extensions/extension'
 import { upperFirst } from 'lodash'
 import AlertCircleIcon from 'mdi-react/AlertCircleIcon'
 import MapSearchIcon from 'mdi-react/MapSearchIcon'
@@ -53,7 +53,7 @@ export const registryExtensionFragment = gql`
 
 const NotFoundPage = () => <HeroPage icon={MapSearchIcon} title="404: Not Found" />
 
-export interface ExtensionAreaRoute extends RouteDescriptor<ExtensionAreaRouteContext> {}
+export interface ExtensionAreaRoute extends RouteDescriptor<ExtensionAreaRouteContext> { }
 
 export interface ExtensionAreaProps extends ExtensionsAreaRouteContext, RouteComponentProps<{ extensionID: string }> {
     routes: ReadonlyArray<ExtensionAreaRoute>

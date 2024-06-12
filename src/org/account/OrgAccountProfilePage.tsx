@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { upperFirst } from 'lodash'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
@@ -12,7 +12,7 @@ import { eventLogger } from '../../tracking/eventLogger'
 import { OrgAreaPageProps } from '../area/OrgArea'
 import { updateOrganization } from '../backend'
 
-interface Props extends OrgAreaPageProps, RouteComponentProps<{}> {}
+interface Props extends OrgAreaPageProps, RouteComponentProps<{}> { }
 
 interface State {
     displayName: string

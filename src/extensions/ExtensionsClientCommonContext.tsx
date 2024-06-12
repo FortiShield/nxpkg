@@ -1,20 +1,20 @@
-import { ControllerProps as GenericExtensionsControllerProps } from '@nxpkg/extensions-client-common/lib/client/controller'
+import { ControllerProps as GenericExtensionsControllerProps } from '@sourcegraph/extensions-client-common/lib/client/controller'
 import {
     ExtensionsProps as GenericExtensionsProps,
     UpdateExtensionSettingsArgs,
-} from '@nxpkg/extensions-client-common/lib/context'
-import { Controller as ExtensionsContextController } from '@nxpkg/extensions-client-common/lib/controller'
-import { ConfiguredExtension } from '@nxpkg/extensions-client-common/lib/extensions/extension'
-import { QueryResult } from '@nxpkg/extensions-client-common/lib/graphql'
-import { ClientConnection } from '@nxpkg/extensions-client-common/lib/messaging'
-import * as ECCGQL from '@nxpkg/extensions-client-common/lib/schema/graphqlschema'
+} from '@sourcegraph/extensions-client-common/lib/context'
+import { Controller as ExtensionsContextController } from '@sourcegraph/extensions-client-common/lib/controller'
+import { ConfiguredExtension } from '@sourcegraph/extensions-client-common/lib/extensions/extension'
+import { QueryResult } from '@sourcegraph/extensions-client-common/lib/graphql'
+import { ClientConnection } from '@sourcegraph/extensions-client-common/lib/messaging'
+import * as ECCGQL from '@sourcegraph/extensions-client-common/lib/schema/graphqlschema'
 import {
     ConfigurationCascadeProps as GenericConfigurationCascadeProps,
     ConfigurationSubject,
     gqlToCascade,
     Settings,
-} from '@nxpkg/extensions-client-common/lib/settings'
-import { LoadingSpinner } from '@nxpkg/react-loading-spinner'
+} from '@sourcegraph/extensions-client-common/lib/settings'
+import { LoadingSpinner } from '@nx-pkg/react-loading-spinner'
 import { isEqual } from 'lodash'
 import AddIcon from 'mdi-react/AddIcon'
 import InfoIcon from 'mdi-react/InformationIcon'
@@ -37,11 +37,11 @@ import { configurationCascade, toGQLKeyPath } from '../settings/configuration'
 import { refreshConfiguration } from '../user/settings/backend'
 import { isErrorLike } from '../util/errors'
 
-export interface ExtensionsControllerProps extends GenericExtensionsControllerProps<ConfigurationSubject, Settings> {}
+export interface ExtensionsControllerProps extends GenericExtensionsControllerProps<ConfigurationSubject, Settings> { }
 
-export interface ConfigurationCascadeProps extends GenericConfigurationCascadeProps<ConfigurationSubject, Settings> {}
+export interface ConfigurationCascadeProps extends GenericConfigurationCascadeProps<ConfigurationSubject, Settings> { }
 
-export interface ExtensionsProps extends GenericExtensionsProps<ConfigurationSubject, Settings> {}
+export interface ExtensionsProps extends GenericExtensionsProps<ConfigurationSubject, Settings> { }
 
 export function createExtensionsContextController(
     clientConnection: Promise<ClientConnection>

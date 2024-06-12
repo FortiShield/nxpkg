@@ -1,4 +1,4 @@
-import { Hoverifier } from '@nxpkg/codeintellify'
+import { Hoverifier } from '@sourcegraph/codeintellify'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
 import { Observable } from 'rxjs'
@@ -92,10 +92,10 @@ export function queryRepositoryComparisonFileDiffs(args: {
 
 interface RepositoryCompareDiffPageProps
     extends RepositoryCompareAreaPageProps,
-        RouteComponentProps<{}>,
-        ExtensionsProps,
-        ExtensionsControllerProps,
-        ExtensionsDocumentsProps {
+    RouteComponentProps<{}>,
+    ExtensionsProps,
+    ExtensionsControllerProps,
+    ExtensionsDocumentsProps {
     /** The base of the comparison. */
     base: { repoPath: string; repoID: GQL.ID; rev: string | null; commitID: string }
 

@@ -1,1 +1,1 @@
-module.exports = require('@nxpkg/prettierrc')
+module.exports = require('@sourcegraph/prettierrc')

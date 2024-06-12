@@ -1,4 +1,4 @@
-import { ExtensionManifest } from '@nxpkg/extensions-client-common/lib/schema/extension.schema'
+import { ExtensionManifest } from '@sourcegraph/extensions-client-common/lib/schema/extension.schema'
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router'
 import { ContributableMenu } from 'nxpkg/module/protocol'
@@ -93,9 +93,8 @@ function toContributionsGroups(manifest: ExtensionManifest): ContributionGroup[]
                         }
                     }
                 }
-                const description = `${action.title || ''}${
-                    action.title && action.description ? ': ' : ''
-                }${action.description || ''}`
+                const description = `${action.title || ''}${action.title && action.description ? ': ' : ''
+                    }${action.description || ''}`
                 actionsGroup.rows.push([
                     <code>{action.command}</code>,
                     // tslint:disable-next-line:no-invalid-template-strings
