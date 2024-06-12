@@ -1,0 +1,50 @@
+Aaron Leung <the.other.aaron@nxpkg.com>
+Alex Saveliev <alexsaveliev@users.noreply.github.com>
+Antonina Cherednichenko <acherednichenko@codeminders.com>
+Beyang Liu <beyang@nxpkg.com>
+Caroline Frost <caroline@nxpkg.com>
+Chelsea Otakan <chexee@gmail.com>
+Chris Ramón <rchristian.ramon@gmail.com>
+Chris Wendt <chrismwendt@gmail.com>
+Dan Adler <dadlerj@users.noreply.github.com>
+Dmitri Shuralyov <shurcooL@gmail.com>
+Emil Davtyan <emil2k@gmail.com>
+Farhan Attamimi <farhan@nxpkg.com>
+Felix Becker <felix.b@outlook.com>
+Gabriel Aszalos <gabriel@nxpkg.com>
+Geoffrey Gilmore <geoffrey@nxpkg.com>
+Ildar Isaev <iisaev@codeminders.com>
+Isaac Snow <isaac@nxpkg.com>
+James McGillicuddy <jamesmcgillicuddy@gmail.com>
+Jamie Wilson <jamie@nxpkg.com>
+John Rothfels <john@nxpkg.com>
+Jon Poler <jonathan.poler@gmail.com>
+Jonathan Poler <jon@nxpkg.com>
+Josh Bleecher Snyder <josharian@gmail.com>
+Julien Chien <julien@nxpkg.com>
+Keegan Carruthers-Smith <keegan.csmith@gmail.com>
+Kevin Burke <kev@inburke.com>
+Leo Succar-Ferré <leosuccarferre@gmail.com>
+Linda Xie <linda@nxpkg.com>
+Martin Amps <m@rtin.so>
+Mate Kovacs <mkovaxx@gmail.com>
+Matt King <kingy895@gmail.com>
+Matt Sprague <matt@nxpkg.com>
+Máté Kovács <mkovacs@users.noreply.github.com>
+Nick Snyder <nick@nxpkg.com>
+Nico Tonozzi <dominic.tonozzi@gmail.com>
+Pararth Shah <pararth@nxpkg.com>
+Quinn Slack <sqs@nxpkg.com>
+Renfred Harper <renfredxh@gmail.com>
+Rich Taylor <rich@nxpkg.com>
+Richard Musiol <mail@richard-musiol.de>
+Rohan Pai <rohan@nxpkg.com>
+Samuel Lavery <sam@nxpkg.com>
+Seebs <seebs@nxpkg.com>
+Shantanu Gupta <shans95g@gmail.com>
+Nxpkg <hi@nxpkg.com>
+Stephen Gutekanst <slimsag@users.noreply.github.com>
+Unknown <u@gogs.io>
+Vanesa Ortiz <vanesa@nxpkg.com>
+ddhanks <dandhanks@gmail.com>
+uforic <uforic@users.noreply.github.com>
